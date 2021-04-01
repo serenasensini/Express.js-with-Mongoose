@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // #STEP 1. Stringa di connessione al database
-mongoose.connect('mongodb://localhost/database', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/resthub', { useNewUrlParser: true});
 
 var db = mongoose.connection;
 
